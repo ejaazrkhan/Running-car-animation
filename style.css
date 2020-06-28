@@ -1,0 +1,43 @@
+body{
+	background-image: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-repeat-x: repeat;
+	background-size: contain;
+	animation: animatedbackground 20s linear infinite;
+
+}
+@keyframes animatedbackground{
+	from{
+		background-position-x: 0;
+	}
+	to{
+		background-position-x: -2000px;
+	}
+}
+.container{
+	height: 100vh;
+}
+.content-wrap{
+	position: relative;
+	height: 100vh;
+}
+.content-wrap .main-div{
+	width: 200px;
+	margin: auto;
+	color: #62d196;
+	position: absolute;
+	bottom: 10%;
+	left: 39%;
+}
+.tyre{
+	position: absolute;
+	bottom: 23px;
+	font-size: 4rem;
+	animation-duration: 1s;
+}
+.tyre.back{
+	left: 14px;
+}
+.tyre.front{
+	right: 13px;
+}
